@@ -134,3 +134,63 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+/*500px breakpoint styles */
+
+@media(max-width: 500px){
+    
+    nav{ /* increased width to spread out anchor elements */
+        width:50%;
+        margin-bottom: 3%;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    nav span {
+        border-left:2px solid #626262;
+    }
+
+    .title-container div{ /* extend title & title photo to extend whole page */
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    h1{
+        font-size:4rem;
+        margin:0;
+    }
+
+    .title-container div{    /*adjusted title photo size */
+        background-size: 230%;
+        height: 40vh;
+
+    }
+
+    .artists-container{
+        flex-direction: column; /*turn images into column */
+        align-items: center; /*align items in column */
+        width: 90%; /*increase width of container to space out artist bios */
+        
+    }
+
+    .artist{
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .artist img { /* change image proportions */
+        width: 60%;
+        height: 30%;
+    }
+
+    .artist a{
+        font-size: 1.5rem;
+    }
+
+    .title-container hr{ 
+        width:100%;  /*extend line break */
+}
